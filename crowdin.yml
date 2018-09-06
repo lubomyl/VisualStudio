@@ -1,7 +1,3 @@
 files:
-  - source: /src/**/Resources.en-US.resx
+  - source: /src/**/Resources.resx
     translation: /%original_path%/Resources.%locale%.resx
-  - source: /src/**/VSPackage.en-US.resx
-    translation: /%original_path%/VSPackage.%locale%.resx
-  - source: /src/**/OcticonPaths.en-US.resx
-    translation: /%original_path%/OcticonPaths.%locale%.resx
