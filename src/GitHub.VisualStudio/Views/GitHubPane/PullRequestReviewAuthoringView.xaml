@@ -34,13 +34,13 @@
     <ScrollViewer>
         <StackPanel Margin="8,0">
             <TextBlock FontSize="16" Margin="0 4 0 0">
-                <Run Text="{x:Static prop:Resources.SubmitYourReviewFor}"></Run>
+                <Run Text="{x:Static prop:Resources.SubmitYourReviewFor}"/>
                 <Hyperlink Command="{Binding NavigateToPullRequest}">
                     <Run>#</Run><Run Text="{Binding PullRequestModel.Number, Mode=OneWay}"/>
                 </Hyperlink>
             </TextBlock>
             <TextBlock Foreground="{DynamicResource GitHubVsGrayText}" Text="{Binding PullRequestModel.Title}" TextWrapping="Wrap"/>
-            <TextBlock Margin="0 12 0 4" Text="{x:Static prop:Resources.YourReviewSummary}"></TextBlock>
+            <TextBlock Margin="0 12 0 4" Text="{x:Static prop:Resources.YourReviewSummary}"/>
             <TextBox AcceptsReturn="True"
                      Background="{DynamicResource VsBrush.BrandedUIBackground}"
                      Foreground="{DynamicResource VsBrush.BrandedUIText}"
@@ -61,23 +61,19 @@
                                 BorderThickness="1"
                                 Padding="4">
                             <StackPanel Background="{DynamicResource GitHubVsToolWindowBackground}">
-                                <ui:GitHubActionLink Command="{Binding Comment}" Margin="4" Content="{x:Static prop:Resources.CommentOnly}"></ui:GitHubActionLink>
+                                <ui:GitHubActionLink Command="{Binding Comment}" Margin="4" Content="{x:Static prop:Resources.CommentOnly}"/>
                                 <ui:GitHubActionLink Command="{Binding Approve}"
                                                      Visibility="{Binding CanApproveRequestChanges, Converter={ui:BooleanToVisibilityConverter}}"
-                                                     Margin="4" Content="{x:Static prop:Resources.Approve}">
-                                    
-                                </ui:GitHubActionLink>
+                                                     Margin="4" Content="{x:Static prop:Resources.Approve}"/>
                                 <ui:GitHubActionLink Command="{Binding RequestChanges}"
                                                      Visibility="{Binding CanApproveRequestChanges, Converter={ui:BooleanToVisibilityConverter}}"
-                                                     Margin="4" Content="{x:Static prop:Resources.RequestChanges}">
-                                   
-                                </ui:GitHubActionLink>
+                                                     Margin="4" Content="{x:Static prop:Resources.RequestChanges}"/>
                             </StackPanel>
                         </Border>
                     </ui:DropDownButton.DropDownContent>
                 </ui:DropDownButton>
                 <Rectangle Fill="{DynamicResource GitHubHeaderSeparatorBrush}" Width="1" Height="16" Margin="4 0"/>
-                <ui:GitHubActionLink Command="{Binding Cancel}" VerticalAlignment="Center" Content="{x:Static prop:Resources.CancelLink}"></ui:GitHubActionLink>
+                <ui:GitHubActionLink Command="{Binding Cancel}" VerticalAlignment="Center" Content="{x:Static prop:Resources.CancelLink}"/>
             </StackPanel>
 
             <TextBox Grid.Column="0"

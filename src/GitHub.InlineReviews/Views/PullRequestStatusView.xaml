@@ -53,9 +53,7 @@
                 </StackPanel>
             </Button>
             <Grid.ToolTip>
-                <TextBlock VerticalAlignment="Center" Text="{x:Static prop:Resources.ViewCheckoutOrCreateAPullRequest}">
-                    
-                </TextBlock>
+                <TextBlock VerticalAlignment="Center" Text="{x:Static prop:Resources.ViewCheckoutOrCreateAPullRequest}"/>
             </Grid.ToolTip>
         </Grid>
 

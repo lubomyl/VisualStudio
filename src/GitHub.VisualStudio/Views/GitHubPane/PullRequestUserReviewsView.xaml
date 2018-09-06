@@ -77,7 +77,7 @@
                                               Margin="0 4"
                                               Visibility="{Binding Body, Converter={ghfvs:NullToVisibilityConverter}}">
                                         <Expander.Header>
-                                            <TextBlock FontWeight="SemiBold" Text="{x:Static prop:Resources.Description}"></TextBlock>
+                                            <TextBlock FontWeight="SemiBold" Text="{x:Static prop:Resources.Description}"/>
                                         </Expander.Header>
                                         <markdig:MarkdownViewer Margin="22 4 0 0" Markdown="{Binding Body}"/>
                                     </Expander>
@@ -85,7 +85,7 @@
                                               Margin="0 4"
                                               Visibility="{Binding FileComments.Count, Converter={ghfvs:CountToVisibilityConverter}}">
                                         <Expander.Header>
-                                            <TextBlock FontWeight="SemiBold" Text="{x:Static prop:Resources.Comments}"></TextBlock>
+                                            <TextBlock FontWeight="SemiBold" Text="{x:Static prop:Resources.Comments}"/>
                                         </Expander.Header>
                                         <local:PullRequestFileCommentsView DataContext="{Binding FileComments}" 
                                                                            Margin="22 4 0 0"/>
@@ -93,7 +93,7 @@
                                     <Expander Margin="0 4"
                                               Visibility="{Binding OutdatedFileComments.Count, Converter={ghfvs:CountToVisibilityConverter}}">
                                         <Expander.Header>
-                                            <TextBlock FontWeight="SemiBold" Text="{x:Static prop:Resources.OutdatedComments}"></TextBlock>
+                                            <TextBlock FontWeight="SemiBold" Text="{x:Static prop:Resources.OutdatedComments}"/>
                                         </Expander.Header>
                                         <local:PullRequestFileCommentsView DataContext="{Binding OutdatedFileComments}"
                                                                            Margin="22 4 0 0"/>

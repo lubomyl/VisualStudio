@@ -216,11 +216,9 @@
                 <Button Command="{Binding CommitEdit}" Content="{Binding CommitCaption}"/>
                 <Button Margin="4 0 0 0"
                         Command="{Binding StartReview}"
-                        Visibility="{Binding CanStartReview, Converter={ui:BooleanToVisibilityConverter}}"
-                         Content="{x:Static prop:Resources.StartAReview}">
-                    
-                </Button>
-                <Button Margin="4 0 0 0" Command="{Binding CancelEdit}" Content="{x:Static prop:Resources.Cancel}"></Button>
+                        Content="{x:Static prop:Resources.StartAReview}"
+                        Visibility="{Binding CanStartReview, Converter={ui:BooleanToVisibilityConverter}}"/>
+                <Button Margin="4 0 0 0" Command="{Binding CancelEdit}" Content="{x:Static prop:Resources.Cancel}"/>
             </StackPanel>
         </Grid>
     </Grid>

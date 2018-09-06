@@ -48,9 +48,8 @@
             <Separator DockPanel.Dock="Left" Style="{StaticResource VerticalSeparator}" Margin="4 0" />
 
             <ghfvs:GitHubActionLink DockPanel.Dock="Left"
-                                    Command="{Binding CreatePullRequest}" Content="{x:Static prop:Resources.CreateNew}">
-               
-            </ghfvs:GitHubActionLink>
+                                    Command="{Binding CreatePullRequest}"
+                                    Content="{x:Static prop:Resources.CreateNew}"/>
 
             <ghfvs:DropDownButton Name="authorFilterDropDown"
                                   DockPanel.Dock="Right"
@@ -153,11 +152,10 @@
                            HorizontalAlignment="Center"
                            Margin="4"
                            Opacity="0.75">
-                    <Run Text="{x:Static prop:Resources.ToGetStartedYouCan}"></Run>
-                     
+                    <Run Text="{x:Static prop:Resources.ToGetStartedYouCan}"/>
                     <Hyperlink Command="{Binding CreatePullRequest}"
-                               Foreground="{DynamicResource GitHubActionLinkItemBrush}" >
-                        <Run Text="{x:Static prop:Resources.CreateAPullRequest}"></Run>
+                               Foreground="{DynamicResource GitHubActionLinkItemBrush}">
+                        <Run Text="{x:Static prop:Resources.CreateAPullRequest}"/>
                     </Hyperlink>
                 </TextBlock>
             </StackPanel>
